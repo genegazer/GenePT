@@ -15,9 +15,11 @@ This script has also been made into a web app available at [yrusad.com/gene_to_p
 ## Running the Analysis
 
 - Use the `df_from_genes` function to parse your genetic data file. The script will automatically handle AncestryDNA, or 23andMe data.
+- Then read the filter's CSV file, and merge that with the raw genetic data.
+- Finally, output the columns 'rsid', 'chromosome', 'position', and 'genotype' to a new CSV which can be used easily by GPT. This should reduce the raw 15mb text file to about a 1mb in CSV format. 
 
 ## Getting Insights
-For best results, use the starting prompt, "Could you take a look at my raw genetic data?" Then, in the next prompt, upload the formatted CSV of genetic data.
+For best results use the starting prompt, "Could you take a look at my raw genetic data?" Then, in the next prompt upload the formatted CSV of genetic data.
 
 After this, GPT will use pandas to look at the data, hopefully only taking a few seconds. After this, prompt GPT with questions about your genetic data.
 
