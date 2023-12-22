@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
-
-
 import io
 import pandas as pd
 
@@ -46,43 +43,23 @@ def df_from_genes(file_path):
     return genetic_data
 
 
-# In[4]:
-
-
+# read the genetic raw data from the text file into a dataframe
 genetic_data = df_from_genes('gene.txt')
 
 
-# In[5]:
-
-
+# read the CSV which has all the 23andMe RSIDs and their associated pub med IDs. 
 rsid_pmid_23andme = pd.read_csv('rsid_pmid_23andme.csv')
-
-
-# In[6]:
 
 
 # Filter the combined DataFrame to keep only rows with count_pmids >= 1
 filtered_rsid_pmid = rsid_pmid_23andme[rsid_pmid_23andme['count_pmids'] >= 1]
 
-
-# In[7]:
-
-
 # Merge the filtered DataFrame with the genetic data DataFrame on the 'rsid' column
 merged_data = pd.merge(genetic_data, filtered_rsid_pmid, on='rsid', how='inner')
 
-
-# In[8]:
-
-
-merged_data.shape
-
-
-# In[11]:
-
+# merged_data.shape
 
 #this takes only the 4 headers which are used by 23andMe's data format, which is also what the custom GPT uses
 merged_data[['rsid', 'chromosome', 'position', 'genotype']].to_csv('data_for_gpt.csv', index=False)
-
 
 # [Custom Genetics Analysis GPT Model to use 'data_for_gpt.csv'](https://chat.openai.com/g/g-UpAdVFI1R-genept)
