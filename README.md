@@ -8,7 +8,7 @@ The custom GPT is available here: [GenePT](https://chat.openai.com/g/g-UpAdVFI1R
 ## Preparing Your Genetic Data
 Ensure your genetic data is in a CSV format with columns: "rsid", "chromosome", "position", and "genotype". The provided pandas code is designed to reduce the size of the raw genetic data to a size which is easy for the sandboxed GPT code analysis features to perform operations.
 
-The `genetics_gpt_pandas.py` file contains the necessary scripts. I've included a copy of my own genetics titled 'my_23andme_data.txt' if you would like to try this tool without using your own genetic data and 'rsid_pmid_23andme.csv' has the data to filter the raw genetics data. 
+The `genetics_gpt_pandas.py` file contains the necessary scripts. I've included a copy of my own genetics titled 'my_23andme_data.txt' if you would like to try this tool without using personal genetic data and 'rsid_pmid_23andme.csv' has the data to filter the raw genetics data. 
 
 This script has also been made into a web app available at [yrusad.com/gene_to_pmid](https://yrusad.com/gene_to_pmid)
 
