@@ -25,14 +25,11 @@ For best results use the starting prompt, "Could you take a look at my raw genet
 
 After this, GPT will use pandas to look at the data, hopefully only taking a few seconds. After this, prompt GPT with questions about your genetic data.
 
-The GPT can find specific polymorphisms: "Please tell me if I have the MTHFR c677t polymorphism." 
-![MTHFR c677t](https://imgur.com/P6QA7ay)
+The GPT can find specific polymorphisms: "Please tell me if I have the MTHFR c677t polymorphism."
 
 GPT can also find polymorphisms based on a biochemical system: "Would you check for any common, well studied polymorphisms in serotonin or dopamine receptors?"
-![biochemical system](https://imgur.com/D3VFlJk)
 
 Or look for changes based on a specific disease: "Would you check for risks of heart disease?"
-![specific disease](https://imgur.com/fjPfG0V)
 
 ## Important Reminder
 GenePT and commercial genetic data is not a substitute for professional medical advice. This tool is entirely for educational and entertainment purposes.
