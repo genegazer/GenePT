@@ -1,4 +1,4 @@
-# GenePT Analysis Tool
+# GenePT: GPT Genetic Analysis Tool
 
 ## Introduction
 GenePT is a tool designed to offer simple yet insightful genetic data analysis. This tool combines the power of GPT with a bit of bioinformatics to provide users with personalized insights into their commercially available genetic data.
@@ -32,4 +32,4 @@ GPT can also find polymorphisms based on a biochemical system: "Would you check 
 Or look for changes based on a specific disease: "Would you check for risks of heart disease?"
 
 ## Important Reminder
-GenePT is not a substitute for professional medical advice. This tool is entirely for educational and entertainment purposes.
+GenePT and commercial genetic data is not a substitute for professional medical advice. This tool is entirely for educational and entertainment purposes.
