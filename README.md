@@ -1,4 +1,4 @@
-# Project Title: GenePT Analysis Tool
+# GenePT Analysis Tool
 
 ## Introduction
 GenePT is a tool designed to offer simple yet insightful genetic data analysis. This tool combines the power of GPT with a bit of bioinformatics to provide users with personalized insights into their commercially available genetic data.
