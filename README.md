@@ -5,7 +5,7 @@ GenePT is a tool designed to offer simple yet insightful genetic data analysis. 
 
 The custom GPT is available here: [GenePT](https://chat.openai.com/g/g-UpAdVFI1R-genept)
 
-If you'd like to use the pre-filtered file of my genetics data it is available in the file "data_for_gpt.csv"
+If you'd like to use the pre-filtered file of my genetics data it is available in the file `data_for_gpt.csv`
 
 ## Preparing Your Genetic Data
 Ensure your genetic data is in a CSV format with columns: "rsid", "chromosome", "position", and "genotype". The provided pandas code is designed to reduce the size of the raw genetic data to a size which is easy for the sandboxed GPT code analysis features to perform operations.
